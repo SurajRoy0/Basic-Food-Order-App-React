@@ -1,0 +1,25 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 5px;
+}
+
+.form div span{
+  font-weight: 600;
+  margin-right: 3px;
+}
+
+.form div input{
+    width: 35px;
+    border: 2px solid rgb(117, 114, 114);
+    border-radius: 4px;
+  }
+
+  .form div button {
+        background-color: rgb(71, 5, 5);
+        border-radius: 60px;
+        padding: 5px 30px;
+        color: white;
+        cursor: pointer;
+  }

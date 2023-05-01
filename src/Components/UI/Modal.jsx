@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
 import classes from "./Modal.module.css";
 
-const Backgrop = (props) => {
+const BackDrop = (props) => {
   return <div className={classes.backdrop} onClick={props.onCartClose}></div>;
 };
 
@@ -20,7 +20,7 @@ const Modal = (props) => {
   return (
     <Fragment>
       {ReactDOM.createPortal(
-        <Backgrop onCartClose={props.onCartClose} />,
+        <BackDrop onCartClose={props.onCartClose} />,
         portalElement
       )}
       {ReactDOM.createPortal(
